@@ -3,139 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfólio Web - Ivan Rafael Turma 9</title>
+        <link rel="stylesheet" href="css/style.css">
         <style>
-            body{
-                width: 1200px;
-                min-width: 800px;
-                margin: 0 auto;
-                background-color: #e9d0d7;
-            }
             
-            h1, h2, h3{
-                text-align: center;
-                background: linear-gradient(90deg, #e9d0d7 0%, #002626 55%, #e9d0d7 100%);
-                padding: 20px;
-                color: #d9bdc5;
-            }
-
-            p{
-                text-align: center;
-                margin: 20px 50px;
-                color: #69626d;
-                font-size: 1.2em;
-            }
-
-            #textoFoto{
-                text-align: center;
-            }
-            #foto{
-                width: 300px;
-                display: flex;
-                border: 4px solid #002626;
-                border-radius: 50%;
-                border-style: double;
-                margin: 0 auto;
-            }
-
-            #logo-github{
-                width: 27%;
-                margin: 0 auto;                
-                text-align: center;
-            }
-
-            #logo-trybe{
-                margin: 0 auto;                
-                text-align: center;
-                display: block;
-                margin-top: 40px;
-                margin-bottom: 100px;
-            }
-
-            #redes{
-                width: 500px;                
-                display: block;
-                text-align: center;
-                margin: 40px auto;                                
-            }
-
-            a{
-                text-align: center;
-                text-decoration-color:indigo;
-            }
-
-            ul{
-                list-style: circle;
-                color: #69626d;
-                text-align: left;
-                font-size: 1.2em;
-
-            }
-
-            #habilidades-principais{   
-                width: 250px;           
-                border: 10px solid #d9bdc5;                
-                display: inline-block;  
-                border-radius: 5%;  
-                border-style: double;           
-                float: left;
-                margin-left: 200px;
-                
-            }
-
-            #habilidades-desenvolvimento{  
-                width: 250px;
-                border: 10px solid #d9bdc5;    
-                border-radius: 5%;   
-                border-style: double;                     
-                display: inline-block;
-                float: right;
-                margin-right: 200px;
-
-                
-            }
-
-            .clear{
-                clear: both;
-            }
         </style>
     </head>
     <body>
-        <h1>Ivan Rafael - Turma 9 Trybe</h1>
-        <img id="foto" src="./imagens/foto1.png" alt="Foto Ivan">
-        <p id="textoFoto"><em>Entrando de cabeça no mundo da tecnologia, muito feliz com essa oportunidade na Trybe</em></p>
-        <p>Meu nome é <em>Ivan Rafael</em>, tenho 38 anos, e sou de São Paulo/SP. Sou <strong>músico</strong> e tenho um projeto de <a href="http://instagram.com/projeto_viramundo" target="_blank">humanização hospitalar.</a><br>Apaixonado por <em>tecnologia, computadores e internet</em>, estou <strong>migrando</strong> de área e junto com essa família <a href="https://betrybe.com">Trybe</a> vou me tornar um grande desenvolvedor!</p>
-        <p>Ah!, também gosto muito de <a href="https://instagram.com/ivandolim" target="_blank">cozinhar</a> e até que o povo aqui gosta bastante rsrs..<br>..e precisando de qualquer coisa é só chamar aqui!</p>
-        <h2>Habilidades:</h2>
+        <div id="descricao">
+            <h1>Ivan Rafael - Turma 9 Trybe</h1>
+            <div id="header">      
+                <div id="foto">
+                    <img id="foto" src="./imagens/foto1.png" alt="Foto Ivan">                    
+                </div><!--foto-->   
+                <div id="conteudo">
+                    <div id="textos">
+                        <p id="textoFoto"><em>Entrando de cabeça no mundo da tecnologia, muito feliz com essa oportunidade na Trybe</em></p>
+                        <p>Meu nome é <em>Ivan Rafael</em>, tenho 38 anos, e sou de São Paulo/SP. Sou <strong>músico</strong> e tenho um projeto de <a href="http://instagram.com/projeto_viramundo" target="_blank">humanização hospitalar.</a><br>Apaixonado por <em>tecnologia, computadores e internet</em>, estou <strong>migrando</strong> de área e junto com essa família <a href="https://betrybe.com">Trybe</a> vou me tornar um grande desenvolvedor!</p>
+                        <p>Ah!, também gosto muito de <a href="https://instagram.com/ivandolim" target="_blank">cozinhar</a> e até que o povo aqui gosta bastante rsrs..<br>..e precisando de qualquer coisa é só chamar aqui!</p>
+                    </div> 
+                </div>
+            </div><!--header-->
+            
+                       
+        </div>
+
+        <div id="habilidades">
+            <h2>Habilidades:</h2>
        
-        <div id="habilidades-principais">
-            <ul id="principais">
-                <li><strong>Principais</strong></li>
-                <li>Paciência</li>
-                <li>Foco</li>
-                <li>Empatia</li>
-                <li>Insistência</li>
-            </ul>
+            <div id="habilidades-principais">
+                <ul id="principais">
+                    <li><strong>Principais</strong></li>
+                    <li>Paciência</li>
+                    <li>Foco</li>
+                    <li>Empatia</li>
+                    <li>Insistência</li>
+                </ul>
+            </div>
+    
+            <div id="habilidades-desenvolvimento">
+                <ul id="desenvolvimento">
+                    <li><strong>Em desenvolvimento</strong></li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Git/Github</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+    
+            <div class="clear"></div>       
+            <div id="redes">
+                <a href="https://github.com/" target="_blank"><img id="logo-github" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" alt="" width="60px"></a>
+                <a href="https://instagram.com/ivandolim" target="_blank"><img src="./imagens/pngegg.png" width="130px" alt=""></a>
+            </div>
         </div>
-
-        <div id="habilidades-desenvolvimento">
-            <ul id="desenvolvimento">
-                <li><strong>Em desenvolvimento</strong></li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git/Github</li>
-                <li>Linux</li>
-            </ul>
-        </div>
-
-        <div class="clear"></div>       
-        <div id="redes">
-            <a href="https://github.com/" target="_blank"><img id="logo-github" src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" alt="" width="60px"></a>
-            <a href="https://instagram.com/ivandolim" target="_blank"><img src="./imagens/pngegg.png" width="130px" alt=""></a>
+            
+       
+        
+        <div id="footer">
+            <h2>Blog da Trybe</h2>
+            <a href="https://blog.betrybe.com/IvanRafael-Dev" target="_blank"><img id="logo-trybe" src="https://app.betrybe.com/assets/images/trybe-logo.png" alt="" width="300px"></a>
         </div>
         
-
-        <h3>Blog da Trybe</h3>
-        <a href="https://blog.betrybe.com/IvanRafael-Dev" target="_blank"><img id="logo-trybe" src="https://app.betrybe.com/assets/images/trybe-logo.png" alt="" width="300px"></a>
 
     </body>
 </html>
